@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-int main(void) {
-    /* 課題0402: 入力されたdoubleのデータを1.08倍した結果を，小数点以下2桁として表示するプログラムを書け． */
+int main(void) 
+{
     double d;           //入力
-    double result;      //結果
+    double result; 
     scanf("%lf",&d);   //入力をキーボードから入力
     result = d * 1.08;
-    if (result > -0.005 && result < 0.005){
-        result = 0.0;
-    }
     printf("%.2f\n", result);           //結果を出力
     return 0;
 }
